@@ -1,0 +1,21 @@
+body{
+    font-family: Verdana;
+    background-color: rgb(245, 245, 215);
+  }
+  h1{
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .subtitles{
+    color: olive;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  #autoria{
+    font-style: italic;
+  }
