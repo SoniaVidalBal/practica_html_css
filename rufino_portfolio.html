@@ -8,94 +8,98 @@
     <title>Rufino</title>
 </head>
 <body>
-    <header>
-        <hgroup>
-          <h1>Rufino Portfolio</h1>
-        </hgroup>
-      </header>
-    <nav>
-        <ul>
-          <li>
-            <a href="">Quién soy</a>
-          </li>
-          <li>
-            <a href="">Mis skills</a>
-          </li>
-          <li>
-            <a href="">Formulario de contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <section title="Me">
-            <h3>¿Quién soy?</h3>
-            <p>Mi nombre es Rufino, tengo cuatro años y vivo en Sant Boi de Llobregat</p>
-        </section>
-        <section title="Skills">
-            <h3>Mis skills</h3>
-            <ul>
-                <li>
-                  <p>Comer</p>
-                </li>
-                <li>
-                  <p>Dormir</p>
-                </li>
-                <li>
-                  <p>Jugar</p>
-                </li>
-                <li>
-                    <p>Arañar</p>
-                </li>
-              </ul>
-        </section>
-      </main>
-      <section title="Formulario">
-        <form action="registro completado.html" method="post">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" name="name" type="text" placeholder="Añade tu nombre">
-            </div> 
-            <div>
-                <label for="apellidos">Apellidos:</label>
-                <input id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
-            </div>
-            <div>
-                <label for="telefono">Teléfono:</label>
-                <input id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono">
-            </div>
-            <div>
-                <label for="github">Github username:</label>
-                <input id="github" name="githubuser" type="" placeholder="Añade tu user name">
-            </div>
-            <div>
-                <fieldset>
-                    <legend>Como me conociste?</legend>
-                    <div>
-                    <input type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
-                    <label for="KeepCoding">KeepCoding</label>
-                    </div>
-                    <div>
-                    <input type="radio" id="Universidad" name="conocimiento" value="Universidad">
-                    <label for="Universidad">Universidad</label>
-                    </div>
-                    <div>
-                    <input type="radio" id="Amigos" name="conocimiento" value="Amigos">
-                    <label for="Amigos">Amigos</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div>
-                <label for="masinfoo">Cuéntame un poco mas de ti:</label>
-                <input id="masinfo" name="descrip" type="text" placeholder="Añade tu explicación">
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
+  <header>
+    <hgroup>
+      <h1>Rufino Portfolio</h1>
+      <img src="/Practica/DSC_0414.JPG" alt="Foto Rufino" title="Rufino" width="400" height="250">
+    </hgroup>
+  </header>
+  <nav>
+      <ul>
+        <li><a href="#">Quién soy</a></li>
+        <li><a href="#">Mis skills</a></li>
+        <li><a href="#">Formulario de contacto</a></li>
+      </ul>
+  </nav>
+  <main>
+    <section>
+      <h3>¿Quién soy?</h3>
+      <p>Mi nombre es Rufino, tengo cuatro años y vivo en Sant Boi de Llobregat</p>
     </section>
-    <footer>
-        <a href="">Instagram</a>
-        <a href="">Facebook</a>
-        <a href="">Linkedin</a>
-        <a href="">TikTok</a>
-      </footer>
+    <section>
+      <h3>Mis skills</h3>
+      <form>
+        <div>
+          <label for="Skill1">Dormir</label>
+          <progress id="Skill1" max="100" value="85">
+        </div>
+        <div>
+          <label for="Skill2">Comer</label>
+          <progress id="Skill2" max="100" value="70">
+        </div>
+        <div>
+          <label for="Skill3">Arañar</label>
+          <progress id="Skill3" max="100" value="15">
+        </div>
+        <div>
+          <label for="Skill4">Jugar</label>
+          <progress id="Skill4" max="100" value="45">
+        </div>
+        <div>
+          <label for="Skill5">Lamer</label>
+          <progress id="Skill5" max="100" value="30">
+        </div>
+      </form>
+    </section>
+  </main>
+  <section>
+    <h3> Formulario de registro </h3>
+    <form action="registro completado.html">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
+      </div> 
+      <div>
+        <label for="apellidos">Apellidos:</label>
+        <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
+      </div>
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono" pattern="[0-9]+">
+      </div>
+      <div>
+        <label for="github">Github username:</label>
+        <input id="github" name="githubuser" type="text" placeholder="Añade tu username" pattern="@[a-z]+">
+      </div>
+      <div>
+        <fieldset>
+          <legend>Como me conociste?</legend>
+          <div>
+            <input required type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
+            <label for="KeepCoding">KeepCoding</label>
+          </div>
+          <div>
+            <input required type="radio" id="Universidad" name="conocimiento" value="Universidad">
+            <label for="Universidad">Universidad</label>
+          </div>
+          <div>
+            <input required type="radio" id="Amigos" name="conocimiento" value="Amigos">
+            <label for="Amigos">Amigos</label>
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <label for="masinfoo">Cuéntame un poco mas de ti:</label>
+        <textarea required id="masinfo" name="descrip" placeholder="Añade lo que quieras" maxlength="180"></textarea>"
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  <footer>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Linkedin</a>
+    <a href="#">TikTok</a>
+  </footer>
 </body>
 </html>
