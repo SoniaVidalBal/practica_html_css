@@ -1,39 +1,72 @@
 :root{
   font-size: 16px;
-  --main-colour: beige
+  --main-colour: beige;
+  font-family: Verdana;
+  box-sizing: border-box;
+}
 
-  }
 .portada{
   background-color: var(--main-colour);
-  
-  }
+  position: relative;
+  display: inline-block;
+}
+
 .portada .titulo{
-  color: orange;
-  font-size: 40px;
+  text-align: center;
+  color: rgb(216, 157, 47);
+  font-size: 2rem;
   font-weight: bold;
 }
+
+.portada .imagen{
+  width: 100vw;
+}
+
 .navbar{
   background-color: rgb(188, 174, 211);
 }
-.navbar.link{
-  display: none;
+
+.navbar .link{
+  /*display: none;*/
   visibility: hidden;
 }
+
 .link{
   text-decoration: none;
   color: black;
 }
-.seccion .subtitles{
+
+.main-content{
+  background-color: var(--main-colour);
+  line-height: 20px;
+}
+
+.main-content .subtitles{
   color: olive;
   font-size: 20px;
   font-weight: bold;
-  }
-.main-content{
-  background-color: var(--main-colour);
+  line-height: 35px;
+  text-decoration: underline;
 }
+
+.main-content .presentacion{
+  margin: 5px;
+  width: 50vw;
+  float: left;
+}
+
+.main-content .skills{
+  margin: 5px;
+}
+
+.main-content .formulario{
+  margin: 5px;
+  margin-top: 20px;
+                                       
+}
+
 .footer{
   background-color: rgb(188, 174, 211);
-}
-.portada .imagen{
-  width: 100vw;
+  width: 100%;
+  float: none;
 }
