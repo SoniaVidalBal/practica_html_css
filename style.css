@@ -1,21 +1,39 @@
-body{
-    font-family: Verdana;
-    background-color: rgb(245, 245, 215);
+:root{
+  font-size: 16px;
+  --main-colour: beige
+
   }
-  h1{
-    color: orange;
-    font-size: 40px;
-    font-weight: bold;
+.portada{
+  background-color: var(--main-colour);
+  
   }
-  .subtitles{
-    color: olive;
-    font-size: 20px;
-    font-weight: bold;
+.portada .titulo{
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+}
+.navbar{
+  background-color: rgb(188, 174, 211);
+}
+.navbar.link{
+  display: none;
+  visibility: hidden;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.seccion .subtitles{
+  color: olive;
+  font-size: 20px;
+  font-weight: bold;
   }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  #autoria{
-    font-style: italic;
-  }
+.main-content{
+  background-color: var(--main-colour);
+}
+.footer{
+  background-color: rgb(188, 174, 211);
+}
+.portada .imagen{
+  width: 100vw;
+}

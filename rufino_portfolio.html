@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,25 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="portada">
     <hgroup>
-      <h1>Rufino Portfolio</h1>
-      <img src="http://drive.google.com/uc?export=view&id=12wl5yhwbiKg5omcK1d0hfXPtegE59Z6k" alt="Foto Rufino" title="Rufino" width="400" height="250">
+      <h1 class="titulo" >Rufino Portfolio</h1>
+      <img class="imagen" src="http://drive.google.com/uc?export=view&id=12wl5yhwbiKg5omcK1d0hfXPtegE59Z6k" alt="Foto Rufino" title="Rufino">
     </hgroup>
   </header>
-  <nav>
+  <nav class="navbar">
       <ul>
-        <li><a href="#">Quién soy</a></li>
-        <li><a href="#">Mis skills</a></li>
-        <li><a href="#">Formulario de contacto</a></li>
+        <li><a class="link" href="#">Quién soy</a></li>
+        <li><a class="link" href="#">Mis skills</a></li>
+        <li><a class="link" href="#">Formulario de contacto</a></li>
       </ul>
   </nav>
-  <main>
-    <section>
+  <main class="main-content">
+    <section class="seccion">
       <h3 class="subtitles">¿Quién soy?</h3>
       <p>Mi nombre es Rufino, tengo cuatro años y vivo en Sant Boi de Llobregat</p>
     </section>
-    <section>
+    <section class="seccion">
       <h3 class="subtitles">Mis skills</h3>
       <form>
         <div>
@@ -53,60 +52,60 @@
         </div>
       </form>
     </section>
+    <section class="seccion">
+      <h3 class="subtitles"> Formulario de registro </h3>
+      <form action="registro completado.html">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
+        </div> 
+        <div>
+          <label for="apellidos">Apellidos:</label>
+          <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono" pattern="[0-9]+">
+        </div>
+        <div>
+          <label for="github">Github username:</label>
+          <input id="github" name="githubuser" type="text" placeholder="Añade tu @username" pattern="@[a-z]+">
+        </div>
+        <div>
+          <fieldset>
+            <legend>Como me conociste?</legend>
+            <div>
+              <input required type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
+              <label for="KeepCoding">KeepCoding</label>
+            </div>
+            <div>
+              <input required type="radio" id="Universidad" name="conocimiento" value="Universidad">
+              <label for="Universidad">Universidad</label>
+            </div>
+            <div>
+              <input required type="radio" id="Amigos" name="conocimiento" value="Amigos">
+              <label for="Amigos">Amigos</label>
+            </div>
+            <div>
+              <input required type="radio" id="Redes" name="conocimiento" value="Redes">
+              <label for="Redes">Redes Sociales</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <label for="masinfoo">Cuéntame un poco mas de ti:</label>
+          <textarea required id="masinfo" name="descrip" placeholder="Añade lo que quieras, max. 180 caractéres" maxlength="180"></textarea>"
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
   </main>
-  <section>
-    <h3 class="subtitles"> Formulario de registro </h3>
-    <form action="registro completado.html">
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
-      </div> 
-      <div>
-        <label for="apellidos">Apellidos:</label>
-        <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
-      </div>
-      <div>
-        <label for="telefono">Teléfono:</label>
-        <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono" pattern="[0-9]+">
-      </div>
-      <div>
-        <label for="github">Github username:</label>
-        <input id="github" name="githubuser" type="text" placeholder="Añade tu @username" pattern="@[a-z]+">
-      </div>
-      <div>
-        <fieldset>
-          <legend>Como me conociste?</legend>
-          <div>
-            <input required type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
-            <label for="KeepCoding">KeepCoding</label>
-          </div>
-          <div>
-            <input required type="radio" id="Universidad" name="conocimiento" value="Universidad">
-            <label for="Universidad">Universidad</label>
-          </div>
-          <div>
-            <input required type="radio" id="Amigos" name="conocimiento" value="Amigos">
-            <label for="Amigos">Amigos</label>
-          </div>
-          <div>
-            <input required type="radio" id="Redes" name="conocimiento" value="Redes">
-            <label for="Redes">Redes Sociales</label>
-          </div>
-        </fieldset>
-      </div>
-      <div>
-        <label for="masinfoo">Cuéntame un poco mas de ti:</label>
-        <textarea required id="masinfo" name="descrip" placeholder="Añade lo que quieras, max. 180 caractéres" maxlength="180"></textarea>"
-      </div>
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-  <footer>
+  <footer class="footer">
     <p id="autoria">Porfolio hecho por Sonia Vidal Baltasar</p> 
-    <span>Encuéntrame en:</span> <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-    <a href="#">Linkedin</a>
-    <a href="#">TikTok</a>
+    <span>Encuéntrame en:</span> <a class="link" href="#">Instagram</a>
+    <a class="link" href="#">Facebook</a>
+    <a class="link" href="#">Linkedin</a>
+    <a class="link" href="#">TikTok</a>
   </footer>
 </body>
 </html>
