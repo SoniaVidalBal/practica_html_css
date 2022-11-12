@@ -9,10 +9,14 @@
   background-color: rgb(188, 174, 211);
   font-weight: bold;
 }
+.navbar .nombre{
+  padding: 10px;
+}
 
 .navbar .menu{
   font-weight: lighter;
   display: none;
+  padding: 10px;
 }
 
 .navbar .menu .link{
@@ -35,9 +39,9 @@
 
 .portada .titulo{
   color: rgb(216, 157, 47);
-  font-size: 2rem;
+  font-size: 5vw;
   font-weight: bold;
-
+  font-variant: small-caps;
 }
 
 .portada .imagen{
@@ -47,6 +51,7 @@
 .main-content{
   background-color: var(--main-colour);
   line-height: 20px;
+  padding: 10px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -69,7 +74,8 @@
 }
 .main-content .formulario{
   grid-column: 1 / 3;
-  margin: 5px
+  margin: 5px;
+  line-height: 25px;
 }
 
 .skills .contenedor{
@@ -102,7 +108,7 @@
   width: 100%;
   height: 100%;
   background: #e09589;
-  animation: dormir 3s forwards;
+  animation: dormir 5s forwards;
 }
 @keyframes comer {
   from{
@@ -118,7 +124,7 @@
   width: 100%;
   height: 100%;
   background: #e09589;
-  animation: comer 3s forwards;
+  animation: comer 5s forwards;
 }
 @keyframes jugar {
   from{
@@ -134,7 +140,7 @@
   width: 100%;
   height: 100%;
   background: #e09589;
-  animation: jugar 3s forwards;
+  animation: jugar 5s forwards;
 }
 @keyframes arañar {
   from{
@@ -150,7 +156,7 @@
   width: 100%;
   height: 100%;
   background: #e09589;
-  animation: arañar 3s forwards;
+  animation: arañar 5s forwards;
 }
 @keyframes lamer {
   from{
@@ -166,17 +172,24 @@
   width: 100%;
   height: 100%;
   background: #e09589;
-  animation: lamer 3s forwards;
+  animation: lamer 5s forwards;
 }
 
 .footer{
   grid-column: 1 / 3;
   grid-row: 5 / 6;
   background-color: rgb(188, 174, 211);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer .autoria{
   font-style: italic;
+  padding: 10px;
+}
+.footer .findme{
+  padding: 10px;
 }
 
 @media screen and (min-width: 576px) {
@@ -199,4 +212,12 @@
   .main-content .presentacion, .skills, .formulario{
     margin: 5px;
   }
+  .footer{
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-color: rgb(188, 174, 211);
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
