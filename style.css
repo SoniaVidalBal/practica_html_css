@@ -1,5 +1,5 @@
 :root{
-  font-size: 4vw;
+  font-size: 100%;
   --main-colour: beige;
   font-family: Verdana;
   box-sizing: border-box;
@@ -180,22 +180,42 @@
   background-color: rgb(188, 174, 211);
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer .autoria{
   font-style: italic;
-  padding: 10px;
+  padding: 5px;
+  width: 100vw;
+  text-align: center;
 }
 .footer .findme{
-  padding: 10px;
+  padding: 5px;
+  width: 100vw;
+  text-align: center;
+
 }
 .footer .enlaces{
-  padding: 10px;
+  padding: 5px;
+  width: 100vw;
+  text-align: center;
 }
 
 @media screen and (min-width: 576px) {
+  :root{
+    font-size: 16px;
+    --main-colour: beige;
+    font-family: Verdana;
+    box-sizing: border-box;
+  }
+  .main-content .subtitles{
+    color: olive;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+    text-decoration: underline;
+  }
   .navbar .menu {
     display: flex;
     justify-content: end;
@@ -220,8 +240,27 @@
     grid-row: 5 / 6;
     background-color: rgb(188, 174, 211);
     display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
+    justify-content: center;
+    align-content: center;
   }
-  
+  .footer .autoria{
+    font-style: italic;
+    padding: 5px;
+    margin-right: 20px;
+    width: auto;
+  }
+  .footer .findme{
+    padding: 5px;
+    width: auto;
+  }
+  .footer .enlaces{
+    padding: 5px;
+    width: auto;
+  }
+  .footer .enlaces{
+    margin: 0;
+  }
+  .footer .autoria, .findme{
+    margin-top: 7px;
+  }
 }
