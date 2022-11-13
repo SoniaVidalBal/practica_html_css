@@ -31,7 +31,6 @@
 .portada{
   background-color: var(--main-colour);
   position: relative;
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +179,8 @@
   grid-row: 5 / 6;
   background-color: rgb(188, 174, 211);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -218,6 +218,7 @@
     background-color: rgb(188, 174, 211);
     display: flex;
     justify-content: space-between;
+    align-content: flex-end;
   }
   
 }
